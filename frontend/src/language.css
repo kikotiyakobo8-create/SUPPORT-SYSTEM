@@ -1,0 +1,39 @@
+.language-switcher {
+  display: flex;
+  gap: 4px;
+  align-items: center;
+  margin-left: 10px;
+  order: 3;
+}
+
+.topbar .user-chip {
+  margin-left: auto;
+  order: 1;
+}
+
+.language {
+  border: 1px solid transparent;
+  background: transparent;
+  color: #c9d9eb;
+  border-radius: 7px;
+  padding: 6px 8px;
+  font-size: .76rem;
+  font-weight: 700;
+}
+
+.language:hover,
+.active-language {
+  color: #fff;
+  border-color: #5882b1;
+  background: #ffffff18;
+}
+
+@media (max-width: 960px) {
+  .language { font-size: 0; padding: 6px; }
+  .language span { font-size: 1rem; }
+}
+
+@media (max-width: 760px) {
+  .language-switcher { margin-left: 10px; }
+  .topbar .user-chip { display: none; }
+}

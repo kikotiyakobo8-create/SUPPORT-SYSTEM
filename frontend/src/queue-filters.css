@@ -1,0 +1,27 @@
+.priority-filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 0 0 17px;
+}
+
+.priority-filters button {
+  border: 1px solid #d6e1ee;
+  border-radius: 999px;
+  background: #fff;
+  color: #34506f;
+  padding: 6px 12px;
+  font-size: .78rem;
+  font-weight: 800;
+}
+
+.priority-filters button:hover,
+.priority-filters .active-filter {
+  border-color: #1769b9;
+  background: #e5f0fc;
+  color: #125697;
+}
+
+.priority-filters .priority-critical.active-filter { background: #fee4e2; border-color: #e15a51; color: #a92218; }
+.priority-filters .priority-high.active-filter { background: #fff0d6; border-color: #e5a94d; color: #92500a; }
+.assignment-help { font-size: .78rem; margin-bottom: 0; }

@@ -1,0 +1,18 @@
+.sign-out {
+  border: 1px solid #5882b1;
+  background: transparent;
+  color: #fff;
+  border-radius: 7px;
+  padding: 6px 10px;
+  font-size: .78rem;
+  font-weight: 750;
+  order: 2;
+}
+
+.sign-out:hover {
+  background: #ffffff18;
+}
+
+@media (max-width: 760px) {
+  .sign-out { margin-left: auto; }
+}

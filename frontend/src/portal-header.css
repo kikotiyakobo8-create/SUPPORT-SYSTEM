@@ -1,0 +1,52 @@
+.portal-header {
+  position: relative;
+  overflow: visible;
+  z-index: 100;
+  min-height: 124px;
+  background: #fff;
+  border-top: 3px solid #09285a;
+  border-bottom: 4px solid #0b315f;
+  display: grid;
+  place-items: center;
+}
+
+.portal-pattern {
+  position: absolute;
+  inset: 0;
+  opacity: .1;
+  background-image:
+    radial-gradient(circle at 12px 12px, #5d6e7e 1px, transparent 2px),
+    linear-gradient(135deg, transparent 46%, #9eabb6 47%, #9eabb6 53%, transparent 54%),
+    linear-gradient(45deg, transparent 46%, #9eabb6 47%, #9eabb6 53%, transparent 54%);
+  background-size: 44px 44px, 72px 72px, 72px 72px;
+}
+
+.portal-content {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  padding: 14px 24px;
+  text-align: center;
+}
+
+.tz-emblem {
+  width: 76px;
+  height: 76px;
+  object-fit: contain;
+  mix-blend-mode: multiply;
+}
+
+.portal-title { color: #082d62; display: grid; gap: 7px; }
+.portal-title span { font-size: .87rem; letter-spacing: .16em; font-weight: 800; }
+.portal-title strong { font-family: Georgia, 'Times New Roman', serif; font-size: clamp(1.35rem, 2.15vw, 2rem); line-height: 1.05; }
+
+@media (max-width: 680px) {
+  .portal-header { min-height: 96px; }
+  .portal-content { gap: 10px; padding: 10px 14px; }
+  .tz-emblem { width: 54px; height: 54px; }
+  .portal-title { gap: 4px; }
+  .portal-title span { font-size: .57rem; letter-spacing: .1em; }
+  .portal-title strong { font-size: 1.02rem; }
+}

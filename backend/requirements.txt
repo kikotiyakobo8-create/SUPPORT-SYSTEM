@@ -1,0 +1,4 @@
+Django>=5.1,<6.1
+djangorestframework>=3.15,<3.17
+dj-database-url>=2.3,<3.1
+psycopg[binary]>=3.2,<3.3
